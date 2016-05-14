@@ -1,7 +1,7 @@
 python3 ../neural-doodle-master/doodle.py \
-                --style samples/womangit.jpeg \
+                --style samples/flow_elya.jpg \
                 --content samples/elya.jpg \
-                --output elya_draw.png \
+                --output output.png \
                 --device=cpu \
                 --phases=4 \
                 --iterations=40
