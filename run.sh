@@ -1,6 +1,6 @@
 python3 ../neural-doodle-master/doodle.py \
-                --style samples/flow_elya.jpg \
-                --content samples/elya.jpg \
+                --style samples/frac.png \
+                --content samples/derevo.jpg \
                 --output output.png \
                 --device=cpu \
                 --phases=4 \
