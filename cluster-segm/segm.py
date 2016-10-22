@@ -34,15 +34,15 @@ if original.shape[0] % 2 != 0 or original.shape[1] % 2 != 0:
     io.imsave(filename, original)
 
 #downscale = 2
-img = downscale(original)
+img = original#downscale(original)
 
 arr = np.reshape(img, [-1, 3])
-labels = KMeans(n_clusters = 3).fit_predict(arr)
+labels = KMeans(n_clusters = 8).fit_predict(arr)
 labels = labels.reshape((img.shape[0], -1))
 
+labels *= 32
+
+#labels = upscale(labels)
 
 
-lab = upscale(lab)
-
-
-io.imsave("{}_sem.png".format(filename[:-4]), lab)
+io.imsave("{}_sem.png".format(filename[:-4]), labels)
